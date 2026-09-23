@@ -107,14 +107,9 @@ struct DashboardView: View {
                 }
             }
             if let settings = response?.settings {
-                let schedulerText: String
-                if settings.schedulerRunning == true {
-                    schedulerText = "Running"
-                } else if settings.schedulerEnabled == true {
-                    schedulerText = "Enabled"
-                } else {
-                    schedulerText = "Off"
-                }
+                let schedulerText = (settings.schedulerRunning == true) ? "Running"
+                    : (settings.schedulerEnabled == true) ? "Enabled"
+                    : "Off"
                 LabeledContent("Scheduler", value: schedulerText)
                 if let exitTime = settings.exitTime {
                     LabeledContent("Exit time", value: exitTime)
