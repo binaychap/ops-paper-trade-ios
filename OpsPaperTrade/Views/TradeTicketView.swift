@@ -163,7 +163,7 @@ struct TradeTicketView: View {
 
     @ViewBuilder
     private func previewSection(_ preview: OrderPreviewResponse) -> some View {
-        Section("Preview") {
+        Section {
             if preview.dryRun == true {
                 Text("DRY RUN \u{2014} validated only, nothing will be submitted")
                     .font(.caption.weight(.bold))
@@ -210,6 +210,8 @@ struct TradeTicketView: View {
                 }
             }
             .disabled((preview.ok != true) || isSubmitting)
+        } header: {
+            Text("Preview")
         } footer: {
             Text("Submit is disabled until the preview passes (ok).")
         }
