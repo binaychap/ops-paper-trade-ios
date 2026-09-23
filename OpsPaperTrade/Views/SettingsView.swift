@@ -10,7 +10,7 @@ struct SettingsView: View {
     var body: some View {
         NavigationStack {
             Form {
-                Section("Server") {
+                Section {
                     TextField("http://192.168.1.10:8000", text: $config.serverURLString)
                         .keyboardType(.URL)
                         .textInputAutocapitalization(.never)
@@ -25,6 +25,8 @@ struct SettingsView: View {
                             .font(.footnote)
                             .foregroundStyle(.secondary)
                     }
+                } header: {
+                    Text("Server")
                 } footer: {
                     Text("The API key is stored in the Keychain, never in plain text.")
                 }
