@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -42,10 +42,20 @@
 		E1B2C3D4E5F60718293A4B10 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFrameworksBuildPhase section */
+		C1B2C3D4E5F60718293A4B52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
 		D1B2C3D4E5F60718293A4B51 = {
 			isa = PBXGroup;
-		children = (
+			children = (
 				D1B2C3D4E5F60718293A4B52 /* OpsPaperTrade */,
 				D1B2C3D4E5F60718293A4B58 /* Products */,
 			);
@@ -53,7 +63,7 @@
 		};
 		D1B2C3D4E5F60718293A4B52 /* OpsPaperTrade */ = {
 			isa = PBXGroup;
-		children = (
+			children = (
 				E1B2C3D4E5F60718293A4B03 /* OpsPaperTradeApp.swift */,
 				E1B2C3D4E5F60718293A4B02 /* Info.plist */,
 				D1B2C3D4E5F60718293A4B53 /* Config */,
@@ -68,7 +78,7 @@
 		};
 		D1B2C3D4E5F60718293A4B53 /* Config */ = {
 			isa = PBXGroup;
-		children = (
+			children = (
 				E1B2C3D4E5F60718293A4B04 /* AppConfig.swift */,
 				E1B2C3D4E5F60718293A4B05 /* KeychainHelper.swift */,
 				E1B2C3D4E5F60718293A4B06 /* UIHelpers.swift */,
@@ -78,7 +88,7 @@
 		};
 		D1B2C3D4E5F60718293A4B54 /* API */ = {
 			isa = PBXGroup;
-		children = (
+			children = (
 				E1B2C3D4E5F60718293A4B07 /* APIClient.swift */,
 			);
 			path = API;
@@ -86,7 +96,7 @@
 		};
 		D1B2C3D4E5F60718293A4B55 /* Models */ = {
 			isa = PBXGroup;
-		children = (
+			children = (
 				E1B2C3D4E5F60718293A4B08 /* Models.swift */,
 			);
 			path = Models;
@@ -94,7 +104,7 @@
 		};
 		D1B2C3D4E5F60718293A4B56 /* Views */ = {
 			isa = PBXGroup;
-		children = (
+			children = (
 				E1B2C3D4E5F60718293A4B09 /* DashboardView.swift */,
 				E1B2C3D4E5F60718293A4B0A /* TradeDetailView.swift */,
 				E1B2C3D4E5F60718293A4B0B /* PortfolioView.swift */,
@@ -107,7 +117,7 @@
 		};
 		D1B2C3D4E5F60718293A4B57 /* Preview Content */ = {
 			isa = PBXGroup;
-		children = (
+			children = (
 				E1B2C3D4E5F60718293A4B10 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -115,7 +125,7 @@
 		};
 		D1B2C3D4E5F60718293A4B58 /* Products */ = {
 			isa = PBXGroup;
-		children = (
+			children = (
 				E1B2C3D4E5F60718293A4B01 /* OpsPaperTrade.app */,
 			);
 			name = Products;
@@ -146,19 +156,23 @@
 /* Begin PBXProject section */
 		A1B2C3D4E5F60718293A4B51 /* Project object */ = {
 			isa = PBXProject;
-		buildConfigurationList = A1B2C3D4E5F60718293A4B52 /* Build configuration list for PBXProject "OpsPaperTrade" */;
-		compatibilityVersion = "Xcode 15.0";
-		developmentRegion = en;
-		hasScannedForEncodings = 0;
-		knownRegions = (
-			en,
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2630;
+			};
+			buildConfigurationList = A1B2C3D4E5F60718293A4B52 /* Build configuration list for PBXProject "OpsPaperTrade" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
 				Base,
 			);
 			mainGroup = D1B2C3D4E5F60718293A4B51;
 			productRefGroup = D1B2C3D4E5F60718293A4B58 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
-		targets = (
+			targets = (
 				B1B2C3D4E5F60718293A4B51 /* OpsPaperTrade */,
 			);
 		};
@@ -179,8 +193,8 @@
 /* Begin PBXSourcesBuildPhase section */
 		C1B2C3D4E5F60718293A4B51 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-		buildActionMask = 2147483647;
-		files = (
+			buildActionMask = 2147483647;
+			files = (
 				F1B2C3D4E5F60718293A4B03 /* OpsPaperTradeApp.swift in Sources */,
 				F1B2C3D4E5F60718293A4B04 /* AppConfig.swift in Sources */,
 				F1B2C3D4E5F60718293A4B05 /* KeychainHelper.swift in Sources */,
@@ -189,22 +203,14 @@
 				F1B2C3D4E5F60718293A4B08 /* Models.swift in Sources */,
 				F1B2C3D4E5F60718293A4B09 /* DashboardView.swift in Sources */,
 				F1B2C3D4E5F60718293A4B0A /* TradeDetailView.swift in Sources */,
+				F1B2C3D4E5F60718293A4B0B /* PortfolioView.swift in Sources */,
+				F1B2C3D4E5F60718293A4B0C /* TradeTicketView.swift in Sources */,
 				F1B2C3D4E5F60718293A4B0D /* OrdersView.swift in Sources */,
 				F1B2C3D4E5F60718293A4B0E /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		C1B2C3D4E5F60718293A4B52 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		A1B2C3D4E5F60718293A4B53 /* Debug */ = {
@@ -225,9 +231,11 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
@@ -239,7 +247,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 5P3M4CQR8N;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -259,6 +270,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -270,6 +282,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -281,25 +294,41 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN_UNUSED_FUNCTION = YES;
-				CLANG_WARN_UNUSED_VARIABLE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 5P3M4CQR8N;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-			SWIFT_COMPILATION_MODE = wholemodule;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -312,7 +341,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "OpsPaperTrade/Preview Content";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = OpsPaperTrade/Info.plist;
@@ -340,7 +368,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "OpsPaperTrade/Preview Content";
 				ENABLE_PREVIEWS = NO;
 				INFOPLIST_FILE = OpsPaperTrade/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = OpsPaperTrade;
@@ -365,25 +392,21 @@
 /* Begin XCConfigurationList section */
 		A1B2C3D4E5F60718293A4B52 /* Build configuration list for PBXProject "OpsPaperTrade" */ = {
 			isa = XCConfigurationList;
-		buildConfigurations = (
-				A1B2C3D4E5F60718293A4B53 /* Debug */,
-				A1B2C3D4E5F60718293A4B52 /* Build configuration list for PBXProject "OpsPaperTrade" */ = {
-			isa = XCConfigurationList;
-		buildConfigurations = (
+			buildConfigurations = (
 				A1B2C3D4E5F60718293A4B53 /* Debug */,
 				A1B2C3D4E5F60718293A4B54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		B1B2C3D4E5F60718293A4B52 /* Build configuration list for PBXNativeTarget "OpsPaperTrade" */ = {
 			isa = XCConfigurationList;
-		buildConfigurations = (
+			buildConfigurations = (
 				B1B2C3D4E5F60718293A4B53 /* Debug */,
 				B1B2C3D4E5F60718293A4B54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
